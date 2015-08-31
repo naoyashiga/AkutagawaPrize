@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33594F1B947B7C007CEDBB /* AppDelegate.swift */; };
-		9A3359521B947B7C007CEDBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359511B947B7C007CEDBB /* ViewController.swift */; };
 		9A3359551B947B7C007CEDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359531B947B7C007CEDBB /* Main.storyboard */; };
 		9A3359571B947B7C007CEDBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359561B947B7C007CEDBB /* Images.xcassets */; };
 		9A33595A1B947B7C007CEDBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359581B947B7C007CEDBB /* LaunchScreen.xib */; };
 		9A3359661B947B7D007CEDBB /* AkutagawaPrizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359651B947B7D007CEDBB /* AkutagawaPrizeTests.swift */; };
+		9A3359711B94806D007CEDBB /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359701B94806D007CEDBB /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		9A33594A1B947B7C007CEDBB /* AkutagawaPrize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AkutagawaPrize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A33594E1B947B7C007CEDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A33594F1B947B7C007CEDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A3359511B947B7C007CEDBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A3359541B947B7C007CEDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A3359561B947B7C007CEDBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A3359591B947B7C007CEDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9A33595F1B947B7D007CEDBB /* AkutagawaPrizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AkutagawaPrizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3359641B947B7D007CEDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3359651B947B7D007CEDBB /* AkutagawaPrizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkutagawaPrizeTests.swift; sourceTree = "<group>"; };
+		9A3359701B94806D007CEDBB /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9A33594F1B947B7C007CEDBB /* AppDelegate.swift */,
-				9A3359511B947B7C007CEDBB /* ViewController.swift */,
+				9A33596F1B948054007CEDBB /* Container */,
 				9A3359531B947B7C007CEDBB /* Main.storyboard */,
 				9A3359561B947B7C007CEDBB /* Images.xcassets */,
 				9A3359581B947B7C007CEDBB /* LaunchScreen.xib */,
@@ -110,6 +110,14 @@
 				9A3359641B947B7D007CEDBB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A33596F1B948054007CEDBB /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				9A3359701B94806D007CEDBB /* ContainerViewController.swift */,
+			);
+			name = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A3359521B947B7C007CEDBB /* ViewController.swift in Sources */,
+				9A3359711B94806D007CEDBB /* ContainerViewController.swift in Sources */,
 				9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
