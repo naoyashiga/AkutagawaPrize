@@ -1,10 +1,1 @@
-PODS:
-  - PageMenu (1.2.8)
-
-DEPENDENCIES:
-  - PageMenu
-
-SPEC CHECKSUMS:
-  PageMenu: 703e82e173f54a4626ab88fcdca7703ee52e0cbe
-
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0.beta.4

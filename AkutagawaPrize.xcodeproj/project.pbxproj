@@ -22,6 +22,10 @@
 		9A3359841B94872F007CEDBB /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359831B94872F007CEDBB /* BaseCollectionViewController.swift */; };
 		9A3359871B948775007CEDBB /* UICollectionView+NibSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359861B948775007CEDBB /* UICollectionView+NibSetting.swift */; };
 		9A33598A1B9487B0007CEDBB /* PageMenuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359891B9487B0007CEDBB /* PageMenuConstraint.swift */; };
+		9A33598F1B948ADD007CEDBB /* PickUpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33598D1B948ADD007CEDBB /* PickUpCollectionViewCell.swift */; };
+		9A3359901B948ADD007CEDBB /* PickUpCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A33598E1B948ADD007CEDBB /* PickUpCollectionViewCell.xib */; };
+		9A3359941B948BD4007CEDBB /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359921B948BD4007CEDBB /* FavoriteCollectionViewCell.swift */; };
+		9A3359951B948BD4007CEDBB /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		9A3359831B94872F007CEDBB /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 		9A3359861B948775007CEDBB /* UICollectionView+NibSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+NibSetting.swift"; sourceTree = "<group>"; };
 		9A3359891B9487B0007CEDBB /* PageMenuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuConstraint.swift; sourceTree = "<group>"; };
+		9A33598D1B948ADD007CEDBB /* PickUpCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickUpCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A33598E1B948ADD007CEDBB /* PickUpCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickUpCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A3359921B948BD4007CEDBB /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
 		A3B7477B23D5171AE488BB78 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +111,7 @@
 				9A33594F1B947B7C007CEDBB /* AppDelegate.swift */,
 				9A33597D1B948319007CEDBB /* Common */,
 				9A3359721B94827D007CEDBB /* Controller */,
+				9A33598B1B948AAC007CEDBB /* View */,
 				9A3359531B947B7C007CEDBB /* Main.storyboard */,
 				9A3359561B947B7C007CEDBB /* Images.xcassets */,
 				9A3359581B947B7C007CEDBB /* LaunchScreen.xib */,
@@ -223,6 +232,33 @@
 			name = Constraints;
 			sourceTree = "<group>";
 		};
+		9A33598B1B948AAC007CEDBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A3359911B948BC5007CEDBB /* Favorite */,
+				9A33598C1B948ABF007CEDBB /* Pickup */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9A33598C1B948ABF007CEDBB /* Pickup */ = {
+			isa = PBXGroup;
+			children = (
+				9A33598D1B948ADD007CEDBB /* PickUpCollectionViewCell.swift */,
+				9A33598E1B948ADD007CEDBB /* PickUpCollectionViewCell.xib */,
+			);
+			name = Pickup;
+			sourceTree = "<group>";
+		};
+		9A3359911B948BC5007CEDBB /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				9A3359921B948BD4007CEDBB /* FavoriteCollectionViewCell.swift */,
+				9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */,
+			);
+			name = Favorite;
+			sourceTree = "<group>";
+		};
 		DD34188C8A96C21F59E1A35A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,7 +323,9 @@
 		9A3359421B947B7C007CEDBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = naoyashiga;
 				TargetAttributes = {
 					9A3359491B947B7C007CEDBB = {
@@ -323,10 +361,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3359901B948ADD007CEDBB /* PickUpCollectionViewCell.xib in Resources */,
 				9A3359551B947B7C007CEDBB /* Main.storyboard in Resources */,
 				9A33597C1B9482D0007CEDBB /* FavoriteCollectionViewController.xib in Resources */,
 				9A33595A1B947B7C007CEDBB /* LaunchScreen.xib in Resources */,
 				9A3359761B9482A1007CEDBB /* PickUpCollectionViewController.xib in Resources */,
+				9A3359951B948BD4007CEDBB /* FavoriteCollectionViewCell.xib in Resources */,
 				9A3359571B947B7C007CEDBB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +436,8 @@
 				9A33597B1B9482D0007CEDBB /* FavoriteCollectionViewController.swift in Sources */,
 				9A3359711B94806D007CEDBB /* ContainerViewController.swift in Sources */,
 				9A33598A1B9487B0007CEDBB /* PageMenuConstraint.swift in Sources */,
+				9A33598F1B948ADD007CEDBB /* PickUpCollectionViewCell.swift in Sources */,
+				9A3359941B948BD4007CEDBB /* FavoriteCollectionViewCell.swift in Sources */,
 				9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */,
 				9A3359841B94872F007CEDBB /* BaseCollectionViewController.swift in Sources */,
 				9A3359811B948333007CEDBB /* Color.swift in Sources */,
@@ -463,6 +505,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -530,6 +573,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AkutagawaPrize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -541,6 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AkutagawaPrize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -559,6 +604,7 @@
 				);
 				INFOPLIST_FILE = AkutagawaPrizeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AkutagawaPrize.app/AkutagawaPrize";
 			};
@@ -574,6 +620,7 @@
 				);
 				INFOPLIST_FILE = AkutagawaPrizeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AkutagawaPrize.app/AkutagawaPrize";
 			};
