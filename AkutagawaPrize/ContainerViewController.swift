@@ -8,33 +8,48 @@
 
 import UIKit
 
-class ContainerViewController: UIViewController {
-    var controllerArray : [BaseCollectionViewController] = []
+struct ContainerCollectionReuseId {
+    static let cell = "CarouselCollectionViewCell"
+}
+
+class ContainerViewController: BaseCollectionViewController {
     
-    private struct NibNameSet {
-        static let pickupVC = "PickUpCollectionViewController"
-        static let favVC = "FavoriteCollectionViewController"
-    }
+    private var cellWidth:CGFloat = 0.0
+    private var cellHeight:CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let pickupVC = PickUpCollectionViewController(nibName: NibNameSet.pickupVC, bundle: nil)
-        let favVC = FavoriteCollectionViewController(nibName: NibNameSet.favVC, bundle: nil)
+        cellWidth = view.bounds.width
+        cellHeight = view.bounds.height
         
-        pickupVC.title = "pickup"
-        favVC.title = "fav"
-        
-        controllerArray.append(pickupVC)
-        controllerArray.append(favVC)
+        collectionView?.applyCellNib(cellNibName: ContainerCollectionReuseId.cell)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    // MARK: UICollectionViewDataSource
+    
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
     }
-
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ContainerCollectionReuseId.cell, forIndexPath: indexPath) as! CarouselCollectionViewCell
+        
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.blackColor()
+        } else {
+            cell.backgroundColor = UIColor.grayColor()
+        }
+        
+        
+        return cell
+    }
 }
