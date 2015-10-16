@@ -8,13 +8,43 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarouselCollectionViewCell" id="gTV-IL-0wX" customClass="CarouselCollectionViewCell" customModule="AkutagawaPrize" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="600"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="600"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTE-tP-gf2">
+                        <rect key="frame" x="158" y="30" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wRB-n5-YCi">
+                        <rect key="frame" x="0.0" y="102" width="350" height="327"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="327" id="GIt-eC-440"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v2u-it-FZV">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.40784313729999999" green="0.61568627450000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vTE-tP-gf2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="1X0-Te-Q4U"/>
+                <constraint firstItem="wRB-n5-YCi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JgL-Ja-sld"/>
+                <constraint firstItem="vTE-tP-gf2" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NH1-RN-rEv"/>
+                <constraint firstItem="wRB-n5-YCi" firstAttribute="top" secondItem="vTE-tP-gf2" secondAttribute="bottom" constant="51" id="iB0-CK-kJj"/>
+                <constraint firstAttribute="trailing" secondItem="wRB-n5-YCi" secondAttribute="trailing" id="j2G-gt-KHi"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="wRB-n5-YCi" id="U3m-UE-KGn"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

@@ -44,7 +44,7 @@ class ContainerViewController: BaseCollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ContainerCollectionReuseId.cell, forIndexPath: indexPath) as! CarouselCollectionViewCell
         
         if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor.blackColor()
+            cell.backgroundColor = UIColor.hexStr("#bbbbbb", alpha: 1.0)
         } else {
             cell.backgroundColor = UIColor.grayColor()
         }

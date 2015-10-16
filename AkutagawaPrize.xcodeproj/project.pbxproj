@@ -28,6 +28,9 @@
 		9A3359951B948BD4007CEDBB /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */; };
 		9ACEB0F91BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEB0F71BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9ACEB0FA1BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACEB0F81BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		9AD3BE2D1BD13F7200592601 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD3BE2B1BD13F7200592601 /* ContentCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		9AD3BE2E1BD13F7200592601 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD3BE2C1BD13F7200592601 /* ContentCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		9AD3BE301BD140A500592601 /* BaseCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD3BE2F1BD140A500592601 /* BaseCarouselCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
 		9ACEB0F71BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		9ACEB0F81BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AD3BE2B1BD13F7200592601 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AD3BE2C1BD13F7200592601 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AD3BE2F1BD140A500592601 /* BaseCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3B7477B23D5171AE488BB78 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -269,6 +275,9 @@
 			children = (
 				9ACEB0F71BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift */,
 				9ACEB0F81BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib */,
+				9AD3BE2B1BD13F7200592601 /* ContentCollectionViewCell.swift */,
+				9AD3BE2C1BD13F7200592601 /* ContentCollectionViewCell.xib */,
+				9AD3BE2F1BD140A500592601 /* BaseCarouselCollectionViewCell.swift */,
 			);
 			name = Carousel;
 			sourceTree = "<group>";
@@ -382,6 +391,7 @@
 				9ACEB0FA1BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib in Resources */,
 				9A3359761B9482A1007CEDBB /* PickUpCollectionViewController.xib in Resources */,
 				9A3359951B948BD4007CEDBB /* FavoriteCollectionViewCell.xib in Resources */,
+				9AD3BE2E1BD13F7200592601 /* ContentCollectionViewCell.xib in Resources */,
 				9A3359571B947B7C007CEDBB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,8 +464,10 @@
 				9A33598F1B948ADD007CEDBB /* PickUpCollectionViewCell.swift in Sources */,
 				9A3359941B948BD4007CEDBB /* FavoriteCollectionViewCell.swift in Sources */,
 				9ACEB0F91BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift in Sources */,
+				9AD3BE301BD140A500592601 /* BaseCarouselCollectionViewCell.swift in Sources */,
 				9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */,
 				9A3359841B94872F007CEDBB /* BaseCollectionViewController.swift in Sources */,
+				9AD3BE2D1BD13F7200592601 /* ContentCollectionViewCell.swift in Sources */,
 				9A3359811B948333007CEDBB /* Color.swift in Sources */,
 				9A3359751B9482A1007CEDBB /* PickUpCollectionViewController.swift in Sources */,
 				9A3359871B948775007CEDBB /* UICollectionView+NibSetting.swift in Sources */,
