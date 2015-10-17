@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -20,10 +21,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wRB-n5-YCi">
-                        <rect key="frame" x="0.0" y="102" width="350" height="327"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="327" id="GIt-eC-440"/>
-                        </constraints>
+                        <rect key="frame" x="0.0" y="102" width="350" height="360"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v2u-it-FZV">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -38,6 +36,7 @@
             <constraints>
                 <constraint firstItem="vTE-tP-gf2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="1X0-Te-Q4U"/>
                 <constraint firstItem="wRB-n5-YCi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JgL-Ja-sld"/>
+                <constraint firstItem="wRB-n5-YCi" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.6" id="NDz-3l-WOr"/>
                 <constraint firstItem="vTE-tP-gf2" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NH1-RN-rEv"/>
                 <constraint firstItem="wRB-n5-YCi" firstAttribute="top" secondItem="vTE-tP-gf2" secondAttribute="bottom" constant="51" id="iB0-CK-kJj"/>
                 <constraint firstAttribute="trailing" secondItem="wRB-n5-YCi" secondAttribute="trailing" id="j2G-gt-KHi"/>

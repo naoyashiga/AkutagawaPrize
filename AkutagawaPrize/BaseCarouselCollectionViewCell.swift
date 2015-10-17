@@ -15,18 +15,26 @@ struct carouselCellSize {
 
 struct carouselCellMargin {
     static let vertical:CGFloat = 0.0
-    static let horizontal:CGFloat = 0.0
+    static let horizontal:CGFloat = 40.0
 }
 
 class BaseCarouselCollectionViewCell: UICollectionViewCell, UICollectionViewDelegateFlowLayout {
+    var baseCollectionView: UICollectionView?
     
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: carouselCellSize.width, height: carouselCellSize.height)
+        
+        if let baseCollectionView = baseCollectionView {
+            return CGSize(width: baseCollectionView.bounds.width * 0.85, height: baseCollectionView.bounds.height)
+            
+        } else {
+            return CGSize(width: carouselCellSize.width, height: carouselCellSize.height)
+        }
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return carouselCellMargin.vertical
+//        return carouselCellMargin.horizontal
+        return 0
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {

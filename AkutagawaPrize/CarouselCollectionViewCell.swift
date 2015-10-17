@@ -18,22 +18,21 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        setCollectionView()
         
         collectionView.delegate = self
         collectionView.dataSource = self
         
         collectionView.applyCellNib(cellNibName: ContentCollectionReuseId.cell)
+        
+        baseCollectionView = collectionView
+        
+        setCollectionView()
     }
     
     func setCollectionView() {
-        let edgeInsetBottom:CGFloat = 0
-        let edgeInsetTop:CGFloat = 0
-        
         carouselCellSize.width = collectionView.bounds.width
         carouselCellSize.height = collectionView.bounds.height
         
-        collectionView.contentInset = UIEdgeInsetsMake(edgeInsetTop, 0, edgeInsetBottom, 0)
         collectionView.backgroundColor = UIColor.viewBackgroundColor()
     }
     
