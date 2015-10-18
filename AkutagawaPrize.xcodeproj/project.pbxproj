@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12D01DB330AE3FD0F16FBA76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDB60505064480EC45F9668 /* libPods.a */; };
 		9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33594F1B947B7C007CEDBB /* AppDelegate.swift */; };
 		9A3359551B947B7C007CEDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359531B947B7C007CEDBB /* Main.storyboard */; };
 		9A3359571B947B7C007CEDBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359561B947B7C007CEDBB /* Images.xcassets */; };
@@ -26,11 +25,13 @@
 		9A3359901B948ADD007CEDBB /* PickUpCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A33598E1B948ADD007CEDBB /* PickUpCollectionViewCell.xib */; };
 		9A3359941B948BD4007CEDBB /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359921B948BD4007CEDBB /* FavoriteCollectionViewCell.swift */; };
 		9A3359951B948BD4007CEDBB /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */; };
+		9A7BD5321BD3AEDF00C2E611 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7BD5311BD3AEDF00C2E611 /* WebImage.framework */; };
 		9ACEB0F91BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEB0F71BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9ACEB0FA1BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACEB0F81BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		9AD3BE2D1BD13F7200592601 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD3BE2B1BD13F7200592601 /* ContentCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9AD3BE2E1BD13F7200592601 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD3BE2C1BD13F7200592601 /* ContentCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		9AD3BE301BD140A500592601 /* BaseCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD3BE2F1BD140A500592601 /* BaseCarouselCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B683729E64532B8B136402FF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B982FD34DA04E0A6A52F18 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2EDB60505064480EC45F9668 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		596FA46D73660815A990263D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		69B982FD34DA04E0A6A52F18 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A33594A1B947B7C007CEDBB /* AkutagawaPrize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AkutagawaPrize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A33594E1B947B7C007CEDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A33594F1B947B7C007CEDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		9A33598E1B948ADD007CEDBB /* PickUpCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickUpCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A3359921B948BD4007CEDBB /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A7BD5311BD3AEDF00C2E611 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 		9ACEB0F71BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		9ACEB0F81BCFD84400C9C8F8 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AD3BE2B1BD13F7200592601 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -81,7 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12D01DB330AE3FD0F16FBA76 /* libPods.a in Frameworks */,
+				B683729E64532B8B136402FF /* Pods.framework in Frameworks */,
+				9A7BD5321BD3AEDF00C2E611 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +297,8 @@
 		E9B1550D1F530559B786DADB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EDB60505064480EC45F9668 /* libPods.a */,
+				9A7BD5311BD3AEDF00C2E611 /* WebImage.framework */,
+				69B982FD34DA04E0A6A52F18 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -312,6 +316,7 @@
 				9A3359481B947B7C007CEDBB /* Resources */,
 				AC47F27D6C951B013659EDEB /* Embed Pods Frameworks */,
 				4C605E16A97AD805792E9F05 /* Copy Pods Resources */,
+				9A7BD5301BD3AC6F00C2E611 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -435,6 +440,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9A7BD5301BD3AC6F00C2E611 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		AC47F27D6C951B013659EDEB /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -599,6 +618,10 @@
 			baseConfigurationReference = 596FA46D73660815A990263D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AkutagawaPrize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";
@@ -611,6 +634,10 @@
 			baseConfigurationReference = A3B7477B23D5171AE488BB78 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AkutagawaPrize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";

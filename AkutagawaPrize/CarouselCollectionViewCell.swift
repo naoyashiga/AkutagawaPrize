@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebImage
 
 struct ContentCollectionReuseId {
     static let cell = "ContentCollectionViewCell"
@@ -54,6 +55,13 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
         } else {
             cell.backgroundColor = UIColor.grayColor()
         }
+        
+        cell.imageView.sd_setImageWithURL(
+            NSURL(string: "http://ecx.images-amazon.com/images/I/41IUgeZHdNL._SL250_.jpg"),
+            completed: { image, error, type, URL in
+                
+        })
+        
         
         return cell
     }
