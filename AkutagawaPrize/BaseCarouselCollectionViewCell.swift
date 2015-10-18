@@ -15,7 +15,7 @@ struct carouselCellSize {
 
 struct carouselCellMargin {
     static let vertical:CGFloat = 0.0
-    static let horizontal:CGFloat = 40.0
+    static let horizontal:CGFloat = 30.0
 }
 
 class BaseCarouselCollectionViewCell: UICollectionViewCell, UICollectionViewDelegateFlowLayout {
@@ -25,7 +25,7 @@ class BaseCarouselCollectionViewCell: UICollectionViewCell, UICollectionViewDele
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         if let baseCollectionView = baseCollectionView {
-            return CGSize(width: baseCollectionView.bounds.width * 0.85, height: baseCollectionView.bounds.height)
+            return CGSize(width: baseCollectionView.bounds.width * 0.75, height: baseCollectionView.bounds.height)
             
         } else {
             return CGSize(width: carouselCellSize.width, height: carouselCellSize.height)
@@ -33,16 +33,15 @@ class BaseCarouselCollectionViewCell: UICollectionViewCell, UICollectionViewDele
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-//        return carouselCellMargin.horizontal
-        return 0
+        return carouselCellMargin.horizontal
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 0.0
+        return 0
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: carouselCellMargin.horizontal / 2, bottom: 0, right: carouselCellMargin.horizontal / 2)
     }
     
 }
