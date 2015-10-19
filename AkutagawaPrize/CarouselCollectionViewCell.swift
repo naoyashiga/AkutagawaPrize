@@ -16,6 +16,7 @@ struct ContentCollectionReuseId {
 class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
+    var books = [Book]()
 
     override func awakeFromNib() {
         super.awakeFromNib()

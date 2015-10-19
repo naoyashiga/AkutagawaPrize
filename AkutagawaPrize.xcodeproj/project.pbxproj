@@ -25,6 +25,8 @@
 		9A3359901B948ADD007CEDBB /* PickUpCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A33598E1B948ADD007CEDBB /* PickUpCollectionViewCell.xib */; };
 		9A3359941B948BD4007CEDBB /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359921B948BD4007CEDBB /* FavoriteCollectionViewCell.swift */; };
 		9A3359951B948BD4007CEDBB /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */; };
+		9A6933BB1BD5214D008D93CC /* Shelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6933BA1BD5214D008D93CC /* Shelf.swift */; settings = {ASSET_TAGS = (); }; };
+		9A6933BD1BD521E7008D93CC /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A6933BC1BD521E7008D93CC /* books.json */; settings = {ASSET_TAGS = (); }; };
 		9A7BD5321BD3AEDF00C2E611 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7BD5311BD3AEDF00C2E611 /* WebImage.framework */; };
 		9A7BD5351BD3B40600C2E611 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BD5341BD3B40600C2E611 /* Book.swift */; settings = {ASSET_TAGS = (); }; };
 		9ACEB0F91BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEB0F71BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -70,6 +72,8 @@
 		9A33598E1B948ADD007CEDBB /* PickUpCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickUpCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A3359921B948BD4007CEDBB /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A3359931B948BD4007CEDBB /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A6933BA1BD5214D008D93CC /* Shelf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shelf.swift; sourceTree = "<group>"; };
+		9A6933BC1BD521E7008D93CC /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		9A7BD5311BD3AEDF00C2E611 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 		9A7BD5341BD3B40600C2E611 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		9ACEB0F71BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				9A7BD5341BD3B40600C2E611 /* Book.swift */,
+				9A6933BA1BD5214D008D93CC /* Shelf.swift */,
+				9A6933BC1BD521E7008D93CC /* books.json */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6933BD1BD521E7008D93CC /* books.json in Resources */,
 				9A3359901B948ADD007CEDBB /* PickUpCollectionViewCell.xib in Resources */,
 				9A3359551B947B7C007CEDBB /* Main.storyboard in Resources */,
 				9A33597C1B9482D0007CEDBB /* FavoriteCollectionViewController.xib in Resources */,
@@ -459,6 +466,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
@@ -494,6 +502,7 @@
 				9A33598A1B9487B0007CEDBB /* PageMenuConstraint.swift in Sources */,
 				9A33598F1B948ADD007CEDBB /* PickUpCollectionViewCell.swift in Sources */,
 				9A3359941B948BD4007CEDBB /* FavoriteCollectionViewCell.swift in Sources */,
+				9A6933BB1BD5214D008D93CC /* Shelf.swift in Sources */,
 				9ACEB0F91BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift in Sources */,
 				9AD3BE301BD140A500592601 /* BaseCarouselCollectionViewCell.swift in Sources */,
 				9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */,

@@ -9,13 +9,19 @@
 import UIKit
 
 class Book {
+    var number: Int
+    var year: Int
     var title: String
-    var imageView: UIImageView?
+    var imageURL: NSURL?
+    var linkURL: NSURL?
     var author: String
     
-    init(title: String, imageView: UIImageView?, author: String) {
+    init(number: Int, year: Int, title: String, imageURL: NSURL?, linkURL: NSURL?, author: String) {
+        self.number = number
+        self.year = year
         self.title = title
-        self.imageView = imageView
+        self.imageURL = imageURL
+        self.linkURL = linkURL
         self.author = author
     }
 }
