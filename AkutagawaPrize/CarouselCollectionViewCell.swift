@@ -16,6 +16,8 @@ struct ContentCollectionReuseId {
 class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
+    
+    var books = [Book]()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,13 +47,14 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return BookManager.sharedInstance.books.count
+//        return BookManager.sharedInstance.books.count
+        return books.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ContentCollectionReuseId.cell, forIndexPath: indexPath) as! ContentCollectionViewCell
         
-        let book = BookManager.sharedInstance.books[indexPath.row]
+        let book = books[indexPath.row]
         
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = UIColor.hexStr("#aaaaaa", alpha: 1.0)

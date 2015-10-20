@@ -42,14 +42,16 @@ class BookManager {
         
         if let items = bookJSON["items"].array {
             for item in items {
+                let id = item["id"].stringValue
                 let number = item["number"].intValue
                 let year = item["year"].intValue
                 let title = item["title"].stringValue
                 let imageURL = item["imageURL"].URL
-                let linkURL = item["imageURL"].URL
+                let linkURL = NSURL(string: "http://www.amazon.co.jp/gp/product/\(id)/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=\(id)&linkCode=as2&tag=naoyashiga-22")
                 let author = item["author"].stringValue
                 
                 let book = Book(
+                    id: id,
                     number: number,
                     year: year,
                     title: title,

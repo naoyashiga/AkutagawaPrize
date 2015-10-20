@@ -1,12 +1,20 @@
 {
     "items": [
               {
+              "id": "4163902309",
               "number": "153",
               "year": "2015",
               "title": "火花",
-              "imageURL": "http://ecx.images-amazon.com/images/I/41IUgeZHdNL._SL250_.jpg",
-              "linkURL": "http://www.amazon.co.jp/gp/product/4163902309/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4163902309&linkCode=as2&tag=naoyashiga-22",
+              "imageURL": "http://ecx.images-amazon.com/images/I/41IUgeZHdNL._SX347_BO1,204,203,200_.jpg",
               "author": "又吉直樹"
+              },
+              {
+              "id": "4163903402",
+              "number": "153",
+              "year": "2015",
+              "title": "スクラップ・アンド・ビルド",
+              "imageURL": "http://ecx.images-amazon.com/images/I/41q7xp1L1qL._SX346_BO1,204,203,200_.jpg",
+              "author": "羽田 圭介"
               }
               ]
 }

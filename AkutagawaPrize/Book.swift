@@ -9,6 +9,7 @@
 import UIKit
 
 class Book {
+    var id: String
     var number: Int
     var year: Int
     var title: String
@@ -16,7 +17,8 @@ class Book {
     var linkURL: NSURL?
     var author: String
     
-    init(number: Int, year: Int, title: String, imageURL: NSURL?, linkURL: NSURL?, author: String) {
+    init(id: String, number: Int, year: Int, title: String, imageURL: NSURL?, linkURL: NSURL?, author: String) {
+        self.id = id
         self.number = number
         self.year = year
         self.title = title

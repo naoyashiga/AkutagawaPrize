@@ -49,6 +49,8 @@ class ContainerViewController: BaseCollectionViewController {
             cell.backgroundColor = UIColor.grayColor()
         }
         
+        var books = BookManager.sharedInstance.books
+        cell.books = books
         
         return cell
     }
