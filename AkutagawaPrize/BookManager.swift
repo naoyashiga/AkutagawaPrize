@@ -1,5 +1,5 @@
 //
-//  Shelf.swift
+//  BookManager.swift
 //  AkutagawaPrize
 //
 //  Created by naoyashiga on 2015/10/19.
@@ -9,27 +9,35 @@
 import UIKit
 import SwiftyJSON
 
-class Shelf {
+class BookManager {
     var books = [Book]()
     private var bookJSON: JSON = ""
     
     init() {
-        
+        setBookJSON { () -> Void in
+            self.getDataFromJSON()
+        }
     }
     
     func add(book: Book) {
+        
+        print(book.title)
         books.append(book)
     }
     
-    func setBookJSON() {
+    func setBookJSON(completion: (() -> Void)) {
         if let path = NSBundle.mainBundle().pathForResource("books", ofType: "json") {
             if let data = NSData(contentsOfFile: path) {
                 bookJSON = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)
+                
+                print("bookJSON")
+                completion()
             }
         }
     }
     
     func getDataFromJSON() {
+        
         
         if let items = bookJSON["items"].array {
             for item in items {

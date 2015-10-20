@@ -29,6 +29,8 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
         baseCollectionView = collectionView
         
         setCollectionView()
+        
+        let manager = BookManager()
     }
     
     func setCollectionView() {
@@ -45,7 +47,7 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 8
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -62,6 +64,7 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
             completed: { image, error, type, URL in
                 
         })
+        
         
         
         return cell
