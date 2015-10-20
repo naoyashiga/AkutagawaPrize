@@ -10,7 +10,9 @@ import UIKit
 import SwiftyJSON
 
 class BookManager {
+    static let sharedInstance = BookManager()
     var books = [Book]()
+    
     private var bookJSON: JSON = ""
     
     init() {
@@ -19,13 +21,13 @@ class BookManager {
         }
     }
     
-    func add(book: Book) {
+    private func add(book: Book) {
         
         print(book.title)
         books.append(book)
     }
     
-    func setBookJSON(completion: (() -> Void)) {
+    private func setBookJSON(completion: (() -> Void)) {
         if let path = NSBundle.mainBundle().pathForResource("books", ofType: "json") {
             if let data = NSData(contentsOfFile: path) {
                 bookJSON = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)
@@ -36,8 +38,7 @@ class BookManager {
         }
     }
     
-    func getDataFromJSON() {
-        
+    private func getDataFromJSON() {
         
         if let items = bookJSON["items"].array {
             for item in items {

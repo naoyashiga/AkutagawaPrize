@@ -16,7 +16,6 @@ struct ContentCollectionReuseId {
 class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
-    var books = [Book]()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +29,6 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
         
         setCollectionView()
         
-        let manager = BookManager()
     }
     
     func setCollectionView() {
@@ -47,11 +45,13 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return BookManager.sharedInstance.books.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ContentCollectionReuseId.cell, forIndexPath: indexPath) as! ContentCollectionViewCell
+        
+        let book = BookManager.sharedInstance.books[indexPath.row]
         
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = UIColor.hexStr("#aaaaaa", alpha: 1.0)
@@ -59,13 +59,12 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
             cell.backgroundColor = UIColor.grayColor()
         }
         
+        cell.titleLabel.text = book.title
+        
         cell.imageView.sd_setImageWithURL(
-            NSURL(string: "http://ecx.images-amazon.com/images/I/41IUgeZHdNL._SL250_.jpg"),
+            book.imageURL,
             completed: { image, error, type, URL in
-                
         })
-        
-        
         
         return cell
     }
