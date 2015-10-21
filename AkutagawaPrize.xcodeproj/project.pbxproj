@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1EEA311BD7BD7D00D58FE5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EEA301BD7BD7D00D58FE5 /* BrowserViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A1EEA341BD7C2BE00D58FE5 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1EEA331BD7C2BE00D58FE5 /* SafariServices.framework */; };
 		9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33594F1B947B7C007CEDBB /* AppDelegate.swift */; };
 		9A3359551B947B7C007CEDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359531B947B7C007CEDBB /* Main.storyboard */; };
 		9A3359571B947B7C007CEDBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3359561B947B7C007CEDBB /* Images.xcassets */; };
@@ -50,6 +52,8 @@
 /* Begin PBXFileReference section */
 		596FA46D73660815A990263D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		69B982FD34DA04E0A6A52F18 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1EEA301BD7BD7D00D58FE5 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		9A1EEA331BD7C2BE00D58FE5 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9A33594A1B947B7C007CEDBB /* AkutagawaPrize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AkutagawaPrize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A33594E1B947B7C007CEDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A33594F1B947B7C007CEDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1EEA341BD7C2BE00D58FE5 /* SafariServices.framework in Frameworks */,
 				B683729E64532B8B136402FF /* Pods.framework in Frameworks */,
 				9A7BD5321BD3AEDF00C2E611 /* WebImage.framework in Frameworks */,
 			);
@@ -104,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A1EEA321BD7BE2600D58FE5 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				9A1EEA301BD7BD7D00D58FE5 /* BrowserViewController.swift */,
+			);
+			name = Browser;
+			sourceTree = "<group>";
+		};
 		9A3359411B947B7C007CEDBB = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +192,7 @@
 				9A3359821B94871A007CEDBB /* Base */,
 				9A3359781B9482B5007CEDBB /* Favorite */,
 				9A3359771B9482A8007CEDBB /* Pickup */,
+				9A1EEA321BD7BE2600D58FE5 /* Browser */,
 				9A33596F1B948054007CEDBB /* Container */,
 			);
 			name = Controller;
@@ -314,6 +328,7 @@
 		E9B1550D1F530559B786DADB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A1EEA331BD7C2BE00D58FE5 /* SafariServices.framework */,
 				9A7BD5311BD3AEDF00C2E611 /* WebImage.framework */,
 				69B982FD34DA04E0A6A52F18 /* Pods.framework */,
 			);
@@ -505,6 +520,7 @@
 				9A6933BB1BD5214D008D93CC /* BookManager.swift in Sources */,
 				9ACEB0F91BCFD84400C9C8F8 /* CarouselCollectionViewCell.swift in Sources */,
 				9AD3BE301BD140A500592601 /* BaseCarouselCollectionViewCell.swift in Sources */,
+				9A1EEA311BD7BD7D00D58FE5 /* BrowserViewController.swift in Sources */,
 				9A3359501B947B7C007CEDBB /* AppDelegate.swift in Sources */,
 				9A3359841B94872F007CEDBB /* BaseCollectionViewController.swift in Sources */,
 				9AD3BE2D1BD13F7200592601 /* ContentCollectionViewCell.swift in Sources */,
@@ -644,6 +660,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AkutagawaPrize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -660,6 +677,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AkutagawaPrize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naoyashiga.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

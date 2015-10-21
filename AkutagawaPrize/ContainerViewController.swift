@@ -12,7 +12,7 @@ struct ContainerCollectionReuseId {
     static let cell = "CarouselCollectionViewCell"
 }
 
-class ContainerViewController: BaseCollectionViewController {
+class ContainerViewController: BaseCollectionViewController, BrowserOpenerDelegate {
     
     private var cellWidth:CGFloat = 0.0
     private var cellHeight:CGFloat = 0.0
@@ -49,9 +49,17 @@ class ContainerViewController: BaseCollectionViewController {
             cell.backgroundColor = UIColor.grayColor()
         }
         
-        var books = BookManager.sharedInstance.books
+        let books = BookManager.sharedInstance.books
         cell.books = books
+        cell.browserOpenerDelegate = self
         
         return cell
+    }
+    
+    // MARK: BrowserOpenerDelegate
+    func openBrowser(url: NSURL) {
+        let browserVC = BrowserViewController(URL: url, entersReaderIfAvailable: true)
+        
+        presentViewController(browserVC, animated: true, completion: nil)
     }
 }

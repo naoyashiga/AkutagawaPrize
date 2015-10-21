@@ -9,15 +9,22 @@
 import UIKit
 import WebImage
 
+protocol BrowserOpenerDelegate {
+    func openBrowser(url: NSURL)
+}
+
 struct ContentCollectionReuseId {
     static let cell = "ContentCollectionViewCell"
 }
 
+@available(iOS 9.0, *)
 class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
     
     var books = [Book]()
+    
+    var browserOpenerDelegate: BrowserOpenerDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -70,5 +77,16 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
         })
         
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        let book = books[indexPath.row]
+        
+        guard let linkURL = book.linkURL else {
+            return
+        }
+        
+        browserOpenerDelegate?.openBrowser(linkURL)
     }
 }
