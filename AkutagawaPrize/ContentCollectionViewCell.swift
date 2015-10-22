@@ -10,7 +10,10 @@ import UIKit
 
 class ContentCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var authorLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var yearLabel: UILabel!
+    @IBOutlet var numberLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -70,6 +70,9 @@ class CarouselCollectionViewCell: BaseCarouselCollectionViewCell, UICollectionVi
         }
         
         cell.titleLabel.text = book.title
+        cell.authorLabel.text = book.author
+        cell.yearLabel.text = String(book.year)
+        cell.numberLabel.text = String(book.number)
         
         cell.imageView.sd_setImageWithURL(
             book.imageURL,
